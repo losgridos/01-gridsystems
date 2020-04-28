@@ -35,3 +35,21 @@
   font-weight: 100;
 }
 
+// #col3-br
+.u-col3-display {
+  display: none;
+
+  @include respond(3col-grid) { display: block }
+}
+
+.u-col3-display-none {
+  display: block;
+
+  @include respond(3col-grid) { display: none }
+}
+
+
+
+
+
+

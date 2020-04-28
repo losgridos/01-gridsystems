@@ -9,9 +9,9 @@
   grid-row: row1 / span 1;
   grid-column: col3 / span 3;
   z-index: 1000;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-end;
+
+  @include respond(3col-grid) { grid-column: col3 / span 1; }
+  @include respond(2col-grid) { grid-column: col2 / span 1; }
 }
 
 // Grid systems
@@ -20,6 +20,8 @@
   grid-row: row3 / span 1;
   grid-column:  col1 / span 7;
   z-index: 1000;
+
+  @include respond(2col-grid) { grid-column: col1 / span 3 }
 }
 
 // in graphic design
@@ -36,7 +38,7 @@
   letter-spacing: -0.35px;
 }
 
-// a visual communication...
+// A visual communication...
 // --------------------------------------------------
 .grid-item-4 {
   grid-row: row4 / span 1;
@@ -47,7 +49,17 @@
   flex-direction: column;
   justify-content: space-around;
   line-height: 1.15;
-  letter-spacing: -0.35px;
+  // letter-spacing: -0.35px;
+
+  @include respond(3col-grid) {
+    grid-column: col2 / span 3;
+    justify-content: flex-start;
+  }
+
+  @include respond(2col-grid) {
+    grid-column: col2 / span 1;
+    letter-spacing: -0.1px;
+  }
 }
 
 // Raster systeme
@@ -56,6 +68,8 @@
   grid-row: row5 / span 1;
   grid-column: col1 / span 7;
   z-index: 1000;
+
+  @include respond(2col-grid) { grid-column: col1 / span 3; }
 }
 
 // visuelle gestaltung...
@@ -64,6 +78,9 @@
   grid-row: row6 / span 1;
   grid-column: col1 / span 3;
   z-index: 1000;
+
+  @include respond(3col-grid) { grid-column: col1 / span 1; }
+
 }
 
 // ein handbuch...
@@ -72,6 +89,9 @@
   grid-row: row6 / span 1;
   grid-column: col3 / span 3;
   z-index: 1000;
+
+  @include respond(3col-grid) { grid-column: col2 / span 3 }
+  @include respond(2col-grid) { grid-column: col2 / span 1 }
 }
 
 // Niggli
@@ -84,4 +104,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  @include respond(2col-grid) { grid-column: col2 / span 1; }
 }
