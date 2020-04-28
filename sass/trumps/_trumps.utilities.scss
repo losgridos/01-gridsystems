@@ -1,0 +1,37 @@
+// --------------------------------------------------
+// #Utilities
+// --------------------------------------------------
+
+.u-text-center {
+  text-align: center;
+}
+
+
+
+// #Cells borders
+// --------------------------------------------------
+
+.u-border {
+  border: $line-unit solid $white;
+}
+
+.u-border-x {
+  border-left: $line-unit solid $white;
+  border-right: $line-unit solid $white;
+}
+
+.u-border-y {
+  border-top: $line-unit solid $white;
+  border-bottom: $line-unit solid $white;
+}
+
+
+// create a variable for the 1px unit to change it just in one click!
+
+// #Fonts
+// --------------------------------------------------
+
+.u-font-light {
+  font-weight: 100;
+}
+

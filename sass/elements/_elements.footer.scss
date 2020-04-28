@@ -1,0 +1,15 @@
+.footer-left {
+  grid-row: footer / span 1;
+  grid-column:  col1 / span 1;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+}
+
+.footer-right {
+  grid-row: footer / span 1;
+  grid-column:  col3 / span 3;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+}

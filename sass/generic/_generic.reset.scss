@@ -1,0 +1,22 @@
+// --------------------------------------------------
+// Generic Reset
+// --------------------------------------------------
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  // font-family: "Helvetica", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-primary;
+  width: 100vw;
+}

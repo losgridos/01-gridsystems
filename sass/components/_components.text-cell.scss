@@ -1,0 +1,87 @@
+// --------------------------------------------------
+// #Cells with Text
+// --------------------------------------------------
+
+
+// Josef Müller-Brockmann
+// --------------------------------------------------
+.grid-item-1 {
+  grid-row: row1 / span 1;
+  grid-column: col3 / span 3;
+  z-index: 1000;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-end;
+}
+
+// Grid systems
+// --------------------------------------------------
+.grid-item-2 {
+  grid-row: row3 / span 1;
+  grid-column:  col1 / span 7;
+  z-index: 1000;
+}
+
+// in graphic design
+// --------------------------------------------------
+.grid-item-3 {
+  grid-row: row4 / span 1;
+  grid-column: col1 / span 3;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: 1;
+  letter-spacing: -0.35px;
+}
+
+// a visual communication...
+// --------------------------------------------------
+.grid-item-4 {
+  grid-row: row4 / span 1;
+  grid-column: col3 / span 3;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 1.15;
+  letter-spacing: -0.35px;
+}
+
+// Raster systeme
+// --------------------------------------------------
+.grid-item-5 {
+  grid-row: row5 / span 1;
+  grid-column: col1 / span 7;
+  z-index: 1000;
+}
+
+// visuelle gestaltung...
+// --------------------------------------------------
+.grid-item-6 {
+  grid-row: row6 / span 1;
+  grid-column: col1 / span 3;
+  z-index: 1000;
+}
+
+// ein handbuch...
+// --------------------------------------------------
+.grid-item-7 {
+  grid-row: row6 / span 1;
+  grid-column: col3 / span 3;
+  z-index: 1000;
+}
+
+// Niggli
+// --------------------------------------------------
+.grid-item-8 {
+  grid-row: row8 / span 1;
+  grid-column: col3 / span 1;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

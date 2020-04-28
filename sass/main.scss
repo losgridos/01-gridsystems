@@ -1,0 +1,23 @@
+// --------------------------------------------------
+// <NAME OF THE PROJECT>
+//
+// Sass styles import for whole project
+// --------------------------------------------------
+
+@import "settings/settings.global";
+@import "settings/settings.colors";
+
+@import "tools/tools.mixins";
+
+@import "generic/generic.reset";
+
+@import "elements/elements.headings";
+@import "elements/elements.links";
+@import "elements/elements.lists";
+@import "elements/elements.footer";
+
+@import "objects/objects.layout";
+
+@import "components/components.text-cell";
+
+@import "trumps/trumps.utilities.scss"
