@@ -1,26 +1,20 @@
 // --------------------------------------------------
 // Media queries mixin
 // --------------------------------------------------
+// there are only 3 media queries in this project, where the breakpoint is just
+// where the grid columns break.
 
 @mixin respond($breakpoint) {
-  @if $breakpoint == mobile {
+  @if $breakpoint == 1col-grid {
     @media only screen and (max-width: 33.4em) { @content }; // 535px
   }
 
-  @if $breakpoint == tablet-port {
-    @media only screen and (max-width: 39.3em) { @content }; // 630px
+  @if $breakpoint == 2col-grid {
+    @media only screen and (max-width: 43.1em) { @content }; // 690px
   }
 
-  @if $breakpoint == tablet-land {
-    @media only screen and (max-width: 47.5em) { @content }; // 760px
-  }
-
-  @if $breakpoint == desktop-small {
-    @media only screen and (max-width: 61.25em) { @content }; // 980px
-  }
-
-  @if $breakpoint == desktop-big {
-    @media only screen and (max-width: 71.25em) { @content }; // 1140px
+  @if $breakpoint == 3col-grid {
+    @media only screen and (max-width: 56.4em) { @content }; // 901px
   }
 }
 

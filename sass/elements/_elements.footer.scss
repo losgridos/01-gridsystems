@@ -12,4 +12,6 @@
   display: flex;
   align-items: flex-end;
   color: white;
+
+  @include respond(2col-grid) { grid-column: col2 / span 1; }
 }
