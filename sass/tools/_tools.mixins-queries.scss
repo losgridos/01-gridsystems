@@ -5,6 +5,10 @@
 // where the grid columns break.
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == 1col-grid-xs {
+    @media only screen and (max-width: 22.5em) { @content }; // 360px
+  }
+
   @if $breakpoint == 1col-grid {
     @media only screen and (max-width: 31.1em) { @content }; // 498px
   }

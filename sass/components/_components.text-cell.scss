@@ -9,8 +9,12 @@
   grid-row: row1 / span 1;
   grid-column: col3 / span 3;
   z-index: 1000;
+  line-height: .9;
 
-  @include respond(3col-grid) { grid-column: col3 / span 1 }
+  @include respond(3col-grid) {
+    grid-column: col3 / span 1;
+    line-height: 1;
+  }
   @include respond(2col-grid) { grid-column: col2 / span 1 }
   @include respond(1col-grid) { grid-column: col1 / span 1 }
 }
@@ -21,6 +25,8 @@
   grid-row: row3 / span 1;
   grid-column:  col1 / span 7;
   z-index: 1000;
+  margin-left: -.8%;
+  line-height: .85;
 
   @include respond(2col-grid) { grid-column: col1 / span 3 }
   @include respond(1col-grid) {
@@ -39,10 +45,18 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  line-height: 1;
-  letter-spacing: -0.35px;
 
-  @include respond(1col-grid) { grid-row: row3 / span 1 }
+  line-height: .9;
+  letter-spacing: -.35px;
+
+  @include respond(3col-grid) { line-height: .95; }
+
+  @include respond(2col-grid) { line-height: 1; }
+
+  @include respond(1col-grid) {
+    grid-row: row3 / span 1;
+    line-height: 1;
+  }
 }
 
 // A visual communication...
@@ -56,11 +70,12 @@
   flex-direction: column;
   justify-content: space-around;
   line-height: 1.15;
-  // letter-spacing: -0.35px;
+
 
   @include respond(3col-grid) {
     grid-column: col2 / span 3;
     justify-content: flex-start;
+    margin-top: -.25rem;
   }
 
   @include respond(2col-grid) {
@@ -68,7 +83,7 @@
     letter-spacing: -0.1px;
   }
 
-  @include respond(1col-grid) { grid-column: col1 / span 1 }
+  @include respond(1col-grid) { grid-column: col1 / span 1; }
 }
 
 // Raster systeme
@@ -77,8 +92,11 @@
   grid-row: row5 / span 1;
   grid-column: col1 / span 7;
   z-index: 1000;
+  line-height: .78;
+  margin-left: -.8%;
 
   @include respond(2col-grid) { grid-column: col1 / span 3; }
+  @include respond(1col-grid) { line-height: .8 }
 }
 
 // visuelle gestaltung...
@@ -87,8 +105,10 @@
   grid-row: row6 / span 1;
   grid-column: col1 / span 3;
   z-index: 1000;
+  margin-top: -.8%;
 
   @include respond(3col-grid) { grid-column: col1 / span 1; }
+  @include respond(1col-grid) { margin-top: -.6%;}
 
 }
 
@@ -98,12 +118,18 @@
   grid-row: row6 / span 1;
   grid-column: col3 / span 3;
   z-index: 1000;
+  margin-top: -.4rem;
+  // line-height: .9;
 
-  @include respond(3col-grid) { grid-column: col2 / span 3 }
+  @include respond(3col-grid) {
+    grid-column: col2 / span 3;
+    margin-top: -.25rem;
+  }
   @include respond(2col-grid) { grid-column: col2 / span 1 }
   @include respond(1col-grid) {
     grid-row: row7 / span 1;
-    grid-column: col1 / span 1
+    grid-column: col1 / span 1;
+    margin-top: -.25rem;
   }
 }
 

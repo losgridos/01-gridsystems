@@ -28,7 +28,10 @@ h1 {
       font-size: 6.6rem; } }
   @media only screen and (max-width: 31.1em) {
     h1 {
-      font-size: 4.3rem; } }
+      font-size: 4.65rem; } }
+  @media only screen and (max-width: 22.5em) {
+    h1 {
+      font-size: 4.35rem; } }
 
 h2 {
   font-size: 3rem; }
@@ -812,10 +815,12 @@ ol {
 .grid-item-1 {
   grid-row: row1 / span 1;
   grid-column: col3 / span 3;
-  z-index: 1000; }
+  z-index: 1000;
+  line-height: .9; }
   @media only screen and (max-width: 56.4em) {
     .grid-item-1 {
-      grid-column: col3 / span 1; } }
+      grid-column: col3 / span 1;
+      line-height: 1; } }
   @media only screen and (max-width: 43.1em) {
     .grid-item-1 {
       grid-column: col2 / span 1; } }
@@ -826,7 +831,9 @@ ol {
 .grid-item-2 {
   grid-row: row3 / span 1;
   grid-column: col1 / span 7;
-  z-index: 1000; }
+  z-index: 1000;
+  margin-left: -.8%;
+  line-height: .85; }
   @media only screen and (max-width: 43.1em) {
     .grid-item-2 {
       grid-column: col1 / span 3; } }
@@ -842,11 +849,18 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  line-height: 1;
-  letter-spacing: -0.35px; }
+  line-height: .9;
+  letter-spacing: -.35px; }
+  @media only screen and (max-width: 56.4em) {
+    .grid-item-3 {
+      line-height: .95; } }
+  @media only screen and (max-width: 43.1em) {
+    .grid-item-3 {
+      line-height: 1; } }
   @media only screen and (max-width: 31.1em) {
     .grid-item-3 {
-      grid-row: row3 / span 1; } }
+      grid-row: row3 / span 1;
+      line-height: 1; } }
 
 .grid-item-4 {
   grid-row: row4 / span 1;
@@ -859,7 +873,8 @@ ol {
   @media only screen and (max-width: 56.4em) {
     .grid-item-4 {
       grid-column: col2 / span 3;
-      justify-content: flex-start; } }
+      justify-content: flex-start;
+      margin-top: -.25rem; } }
   @media only screen and (max-width: 43.1em) {
     .grid-item-4 {
       grid-column: col2 / span 1;
@@ -871,33 +886,45 @@ ol {
 .grid-item-5 {
   grid-row: row5 / span 1;
   grid-column: col1 / span 7;
-  z-index: 1000; }
+  z-index: 1000;
+  line-height: .78;
+  margin-left: -.8%; }
   @media only screen and (max-width: 43.1em) {
     .grid-item-5 {
       grid-column: col1 / span 3; } }
+  @media only screen and (max-width: 31.1em) {
+    .grid-item-5 {
+      line-height: .8; } }
 
 .grid-item-6 {
   grid-row: row6 / span 1;
   grid-column: col1 / span 3;
-  z-index: 1000; }
+  z-index: 1000;
+  margin-top: -.8%; }
   @media only screen and (max-width: 56.4em) {
     .grid-item-6 {
       grid-column: col1 / span 1; } }
+  @media only screen and (max-width: 31.1em) {
+    .grid-item-6 {
+      margin-top: -.6%; } }
 
 .grid-item-7 {
   grid-row: row6 / span 1;
   grid-column: col3 / span 3;
-  z-index: 1000; }
+  z-index: 1000;
+  margin-top: -.4rem; }
   @media only screen and (max-width: 56.4em) {
     .grid-item-7 {
-      grid-column: col2 / span 3; } }
+      grid-column: col2 / span 3;
+      margin-top: -.25rem; } }
   @media only screen and (max-width: 43.1em) {
     .grid-item-7 {
       grid-column: col2 / span 1; } }
   @media only screen and (max-width: 31.1em) {
     .grid-item-7 {
       grid-row: row7 / span 1;
-      grid-column: col1 / span 1; } }
+      grid-column: col1 / span 1;
+      margin-top: -.25rem; } }
 
 .grid-item-8 {
   grid-row: row8 / span 1;

@@ -14,7 +14,8 @@ h1 {
 
   @include respond(3col-grid) { font-size: 9.2rem }
   @include respond(2col-grid) { font-size: 6.6rem }
-  @include respond(1col-grid) { font-size: 4.3rem }
+  @include respond(1col-grid) { font-size: 4.65rem }
+  @include respond(1col-grid-xs) { font-size: 4.35rem }
 };
 
 h2 {
