@@ -10,8 +10,9 @@
   grid-column: col3 / span 3;
   z-index: 1000;
 
-  @include respond(3col-grid) { grid-column: col3 / span 1; }
-  @include respond(2col-grid) { grid-column: col2 / span 1; }
+  @include respond(3col-grid) { grid-column: col3 / span 1 }
+  @include respond(2col-grid) { grid-column: col2 / span 1 }
+  @include respond(1col-grid) { grid-column: col1 / span 1 }
 }
 
 // Grid systems
@@ -22,6 +23,10 @@
   z-index: 1000;
 
   @include respond(2col-grid) { grid-column: col1 / span 3 }
+  @include respond(1col-grid) {
+    grid-row: row2 / span 1;
+    grid-column: col1 / span 1
+  }
 }
 
 // in graphic design
@@ -36,6 +41,8 @@
   justify-content: flex-start;
   line-height: 1;
   letter-spacing: -0.35px;
+
+  @include respond(1col-grid) { grid-row: row3 / span 1 }
 }
 
 // A visual communication...
@@ -60,6 +67,8 @@
     grid-column: col2 / span 1;
     letter-spacing: -0.1px;
   }
+
+  @include respond(1col-grid) { grid-column: col1 / span 1 }
 }
 
 // Raster systeme
@@ -92,6 +101,10 @@
 
   @include respond(3col-grid) { grid-column: col2 / span 3 }
   @include respond(2col-grid) { grid-column: col2 / span 1 }
+  @include respond(1col-grid) {
+    grid-row: row7 / span 1;
+    grid-column: col1 / span 1
+  }
 }
 
 // Niggli
@@ -106,4 +119,5 @@
   justify-content: flex-end;
 
   @include respond(2col-grid) { grid-column: col2 / span 1; }
+  @include respond(1col-grid) { grid-column: col1 / span 1; }
 }

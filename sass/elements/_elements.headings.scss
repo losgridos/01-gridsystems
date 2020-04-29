@@ -11,9 +11,10 @@ h1 {
   font-size: 12.3rem;
   font-weight: 500;
 
+
   @include respond(3col-grid) { font-size: 9.2rem }
   @include respond(2col-grid) { font-size: 6.6rem }
-
+  @include respond(1col-grid) { font-size: 4.3rem }
 };
 
 h2 {
@@ -46,4 +47,5 @@ p {
 
   @include respond(3col-grid) { font-size: 1.8rem }
   @include respond(2col-grid) { font-size: 1.6rem }
+  @include respond(1col-grid) { font-size: 1.8rem }
 };

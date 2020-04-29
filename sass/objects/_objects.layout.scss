@@ -35,27 +35,37 @@
   margin-top: 8rem;
   margin-bottom: 10rem;
 
-// 3 Columns Grid for devices smaller than 902 px
+// 3 Columns Grid for devices smaller than 901 px
 // --------------------------------------------------
   @include respond(3col-grid) {
     grid-template-columns:
-    minmax(2rem, 1fr)
-    [col1]minmax(20rem, 20rem)
-    [gap1]2rem
-    [col2]minmax(20rem, 20rem)
-    [gap2]2rem
-    [col3]minmax(20rem, 20rem)
-    minmax(2rem, 1fr);
+      minmax(2rem, 1fr)
+      [col1]minmax(20rem, 20rem)
+      [gap1]2rem
+      [col2]minmax(20rem, 20rem)
+      [gap2]2rem
+      [col3]minmax(20rem, 20rem)
+      minmax(2rem, 1fr);
   }
 
-// 2 Columns Grid for devices smaller than 902 px
+// 2 Columns Grid for devices smaller than 690 px
 // --------------------------------------------------
   @include respond(2col-grid) {
     grid-template-columns:
-    minmax(2rem, 1fr)
-    [col1]minmax(20rem, 25rem)
-    [gap1]2rem
-    [col2]minmax(20rem, 25rem)
-    minmax(2rem, 1fr);
+      minmax(2rem, 1fr)
+      [col1]minmax(20rem, 25rem)
+      [gap1]2rem
+      [col2]minmax(20rem, 25rem)
+      minmax(2rem, 1fr);
   }
+
+  // 1 Column Grid for devices smaller than 498 px
+  // --------------------------------------------------
+    @include respond(1col-grid) {
+      grid-template-columns:
+      minmax(2rem, 1fr)
+      [col1]minmax(30rem, 35rem)
+      minmax(2rem, 1fr);
+    }
+
 }
