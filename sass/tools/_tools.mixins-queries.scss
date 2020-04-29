@@ -6,7 +6,7 @@
 
 @mixin respond($breakpoint) {
   @if $breakpoint == 1col-grid {
-    @media only screen and (max-width: 33.4em) { @content }; // 535px
+    @media only screen and (max-width: 31.1em) { @content }; // 498px
   }
 
   @if $breakpoint == 2col-grid {

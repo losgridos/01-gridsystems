@@ -13,5 +13,9 @@
   align-items: flex-end;
   color: white;
 
-  @include respond(2col-grid) { grid-column: col2 / span 1; }
+  @include respond(2col-grid) { grid-column: col2 / span 1 }
+  @include respond(1col-grid) {
+    grid-column: col1 / span 1;
+    justify-content: flex-end;
+  }
 }
