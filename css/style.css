@@ -56,8 +56,7 @@ h6 {
   font-size: 1.6rem; }
 
 p {
-  font-size: 2.2rem;
-  font-weight: 100; }
+  font-size: 2.2rem; }
   @media only screen and (max-width: 56.4em) {
     p {
       font-size: 1.8rem; } }
@@ -68,17 +67,23 @@ p {
     p {
       font-size: 1.8rem; } }
 
+a {
+  font-weight: 100;
+  color: white;
+  text-decoration: none; }
+
 a:link {
-  color: blue; }
+  color: #faf4f4; }
 
 a:visited {
-  color: purple; }
+  color: #faf4f4; }
 
 a:hover {
-  color: red; }
+  color: #000000;
+  font-weight: 300; }
 
 a:active {
-  color: yellow; }
+  color: #000000; }
 
 ul,
 ol {
