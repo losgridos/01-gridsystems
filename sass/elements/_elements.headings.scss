@@ -44,7 +44,6 @@ h6 {
 
 p {
   font-size: 2.2rem;
-  font-weight: 100;
 
   @include respond(3col-grid) { font-size: 1.8rem }
   @include respond(2col-grid) { font-size: 1.6rem }
