@@ -2,13 +2,8 @@
 // #Utilities
 // --------------------------------------------------
 
-.u-text-center {
-  text-align: center;
-}
 
-
-
-// #Cells borders
+// #Cells border
 // --------------------------------------------------
 
 .u-border {
@@ -26,22 +21,8 @@
 }
 
 
-// create a variable for the 1px unit to change it just in one click!
-
-// #Fonts
+// #Displays
 // --------------------------------------------------
-
-.u-font-light {
-  font-weight: 100;
-}
-
-// #col3-br
-.u-col3-display {
-  display: none;
-
-  @include respond(3col-grid) { display: block }
-}
-
 .u-col3-display-none {
   display: block;
 

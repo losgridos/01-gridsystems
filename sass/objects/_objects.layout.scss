@@ -2,11 +2,15 @@
 // #Layout
 // --------------------------------------------------
 
+
+// --------------------------------------------------
+// 4 Col. Grid
+// --------------------------------------------------
 .grid {
   margin: 0px auto; //centered grid
   display: grid;
 
-// Grid Columns
+// Columns
 // --------------------------------------------------
   grid-template-columns:
     minmax(2rem, 1fr)
@@ -19,7 +23,7 @@
     [col4]minmax(20rem, 20rem)
     minmax(2rem, 1fr);
 
-// Grid Rows
+// Rows
 // --------------------------------------------------
   grid-template-rows:
     [row1]13rem 2rem
@@ -35,7 +39,7 @@
   margin-top: 8rem;
   margin-bottom: 10rem;
 
-// 3 Columns Grid for devices smaller than 901 px
+// 3 Col. Grid / devices < than 901px
 // --------------------------------------------------
   @include respond(3col-grid) {
     grid-template-columns:
@@ -48,7 +52,7 @@
       minmax(2rem, 1fr);
   }
 
-// 2 Columns Grid for devices smaller than 690 px
+// 2 Col. Grid / devices < than 690px
 // --------------------------------------------------
   @include respond(2col-grid) {
     grid-template-columns:
@@ -59,13 +63,12 @@
       minmax(2rem, 1fr);
   }
 
-  // 1 Column Grid for devices smaller than 498 px
+  // 1 Col. Grid / devices < than 498px
   // --------------------------------------------------
-    @include respond(1col-grid) {
-      grid-template-columns:
-      minmax(2rem, 1fr)
-      [col1]minmax(30rem, 35rem)
-      minmax(2rem, 1fr);
-    }
-
+  @include respond(1col-grid) {
+    grid-template-columns:
+    minmax(2rem, 1fr)
+    [col1]minmax(30rem, 35rem)
+    minmax(2rem, 1fr);
+  }
 }
