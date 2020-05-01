@@ -1,6 +1,9 @@
 // --------------------------------------------------
 // #Cells with Text
 // --------------------------------------------------
+// The cell text stays in the same cells but with z-index
+// to be upfront of the grid.
+// --------------------------------------------------
 
 
 // Josef Müller-Brockmann
@@ -50,9 +53,7 @@
   letter-spacing: -.35px;
 
   @include respond(3col-grid) { line-height: .95; }
-
   @include respond(2col-grid) { line-height: 1; }
-
   @include respond(1col-grid) {
     grid-row: row3 / span 1;
     line-height: 1;
@@ -71,18 +72,15 @@
   justify-content: space-around;
   line-height: 1.15;
 
-
   @include respond(3col-grid) {
     grid-column: col2 / span 3;
     justify-content: flex-start;
     margin-top: -.25rem;
   }
-
   @include respond(2col-grid) {
     grid-column: col2 / span 1;
     letter-spacing: -0.1px;
   }
-
   @include respond(1col-grid) { grid-column: col1 / span 1; }
 }
 
@@ -109,7 +107,6 @@
 
   @include respond(3col-grid) { grid-column: col1 / span 1; }
   @include respond(1col-grid) { margin-top: -.6%;}
-
 }
 
 // ein handbuch...
