@@ -27,9 +27,6 @@ This project was created by myself with the intention of getting better at the u
 2) Test the limits of the CSS Grid, how exactly work and what can you build with it. 
 3) Learn how it work and implement a code architecture following the ITCSS principles. 
 
-#### About the UX/UI Design
-The goal of this project was not to develop a great UI/UX design, just to focus on coding. But as a designer myself, I needed at least a minimun viable UX to pleased my eyes while coding. I didn´t designed everything from scratch, but got inspiration from the old medium.com landing site. 
-
 ## Tech Used
 - Html, CSS & SASS
 
@@ -38,7 +35,7 @@ This project requires node and npm installed globally.
 
 Clone the repository to a directory of your choosing
 ```
-$ git clone https://github.com/caballero-react-ex/chillquotes.git
+$ git clone https://github.com/losgridos/01-gridsystems.git
 ```
 
 Navigate into chillquote directory and install the necessary packages
